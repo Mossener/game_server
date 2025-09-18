@@ -11,3 +11,5 @@ add_executable(logger_app
 
  ${SRC_FILES} 
  ${CMAKE_SOURCE_DIR}/app/main.cpp)
+    
+ 
