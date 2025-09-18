@@ -1,0 +1,3 @@
+/home/yurika/c_work_area/game_server/build/CMakeFiles/logger_app.dir
+/home/yurika/c_work_area/game_server/build/CMakeFiles/edit_cache.dir
+/home/yurika/c_work_area/game_server/build/CMakeFiles/rebuild_cache.dir

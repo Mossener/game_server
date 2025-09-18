@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/yurika/c_work_area/game_server/build",
+  "command": "/usr/bin/g++ -DLOGGER_PATH=\\\"/home/yurika/c_work_area/game_server/build/logger\\\" -I/home/yurika/c_work_area/game_server/include -g -std=gnu++17 -o CMakeFiles/logger_app.dir/src/logger.cpp.o -c /home/yurika/c_work_area/game_server/src/logger.cpp",
+  "file": "/home/yurika/c_work_area/game_server/src/logger.cpp"
+},
+{
+  "directory": "/home/yurika/c_work_area/game_server/build",
+  "command": "/usr/bin/g++ -DLOGGER_PATH=\\\"/home/yurika/c_work_area/game_server/build/logger\\\" -I/home/yurika/c_work_area/game_server/include -g -std=gnu++17 -o CMakeFiles/logger_app.dir/app/main.cpp.o -c /home/yurika/c_work_area/game_server/app/main.cpp",
+  "file": "/home/yurika/c_work_area/game_server/app/main.cpp"
+}
+]
