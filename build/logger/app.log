@@ -1,42 +1,9 @@
-[INFO] Application started
-[WARNING] Potential issue detected
-[ERROR] Critical error occurred
-[0] Application started
-[1] Potential issue detected
-[2] Critical error occurred
-[INFO] Application started
-[WARNING] Potential issue detected
-[ERROR] Critical error occurred
-[INFO] This is an info message.
-[WARNING] This is a warning message.
-[ERROR] This is an error message.
-[INFO] This is an info message.
-[WARNING] This is a warning message.
-[ERROR] This is an error message.
-[INFO] This is an info message.
-[WARNING] This is a warning message.
-[ERROR] This is an error message.
-[INFO] This is an info message.
-[WARNING] This is a warning message.
-[ERROR] This is an error message.
-[INFO] This is an info message.
-[WARNING] This is a warning message.
-[ERROR] This is an error message.
-[INFO] This is an info message.
-[WARNING] This is a warning message.
-[ERROR] This is an error message.
-[INFO] This is an info message.
-[WARNING] This is a warning message.
-[ERROR] This is an error message.
-[INFO] This is an info message.
-[WARNING] This is a warning message.
-[ERROR] This is an error message.
-[INFO] This is an info message.
-[WARNING] This is a warning message.
-[ERROR] This is an error message.
-[INFO] This is an info message.
-[WARNING] This is a warning message.
-[ERROR] This is an error message.
-[INFO] This is an info message.
-[WARNING] This is a warning message.
-[ERROR] This is an error message.
+[ERROR] Server error: Bind failed
+[ERROR] Server error: Bind failed
+[INFO] Server started, listening on port 8080
+[INFO] Accepted new connection
+[INFO] Received: Hello, Server!
+[INFO] Closed connection
+[INFO] Accepted new connection
+[INFO] Received: Hello, Server!
+[INFO] Closed connection

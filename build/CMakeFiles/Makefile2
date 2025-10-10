@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yurika/c_work_area/game_server
+CMAKE_SOURCE_DIR = /home/yurika/c_area/game_server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yurika/c_work_area/game_server/build
+CMAKE_BINARY_DIR = /home/yurika/c_area/game_server/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/logger_app.dir/clean
 CMakeFiles/logger_app.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger_app.dir/build.make CMakeFiles/logger_app.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger_app.dir/build.make CMakeFiles/logger_app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yurika/c_work_area/game_server/build/CMakeFiles --progress-num=1,2,3 "Built target logger_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yurika/c_area/game_server/build/CMakeFiles --progress-num=1,2,3 "Built target logger_app"
 .PHONY : CMakeFiles/logger_app.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/logger_app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yurika/c_work_area/game_server/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yurika/c_area/game_server/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/logger_app.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yurika/c_work_area/game_server/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yurika/c_area/game_server/build/CMakeFiles 0
 .PHONY : CMakeFiles/logger_app.dir/rule
 
 # Convenience name for target.

@@ -86,8 +86,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/yurika/c_work_area/game_server/build",
-		"source" : "/home/yurika/c_work_area/game_server"
+		"build" : "/home/yurika/c_area/game_server/build",
+		"source" : "/home/yurika/c_area/game_server"
 	},
 	"version" : 
 	{

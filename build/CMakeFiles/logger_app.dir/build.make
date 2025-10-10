@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yurika/c_work_area/game_server
+CMAKE_SOURCE_DIR = /home/yurika/c_area/game_server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yurika/c_work_area/game_server/build
+CMAKE_BINARY_DIR = /home/yurika/c_area/game_server/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/logger_app.dir/depend.make
@@ -72,30 +72,30 @@ include CMakeFiles/logger_app.dir/flags.make
 CMakeFiles/logger_app.dir/src/logger.cpp.o: CMakeFiles/logger_app.dir/flags.make
 CMakeFiles/logger_app.dir/src/logger.cpp.o: ../src/logger.cpp
 CMakeFiles/logger_app.dir/src/logger.cpp.o: CMakeFiles/logger_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yurika/c_work_area/game_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/logger_app.dir/src/logger.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/logger_app.dir/src/logger.cpp.o -MF CMakeFiles/logger_app.dir/src/logger.cpp.o.d -o CMakeFiles/logger_app.dir/src/logger.cpp.o -c /home/yurika/c_work_area/game_server/src/logger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yurika/c_area/game_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/logger_app.dir/src/logger.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/logger_app.dir/src/logger.cpp.o -MF CMakeFiles/logger_app.dir/src/logger.cpp.o.d -o CMakeFiles/logger_app.dir/src/logger.cpp.o -c /home/yurika/c_area/game_server/src/logger.cpp
 
 CMakeFiles/logger_app.dir/src/logger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logger_app.dir/src/logger.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yurika/c_work_area/game_server/src/logger.cpp > CMakeFiles/logger_app.dir/src/logger.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yurika/c_area/game_server/src/logger.cpp > CMakeFiles/logger_app.dir/src/logger.cpp.i
 
 CMakeFiles/logger_app.dir/src/logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logger_app.dir/src/logger.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yurika/c_work_area/game_server/src/logger.cpp -o CMakeFiles/logger_app.dir/src/logger.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yurika/c_area/game_server/src/logger.cpp -o CMakeFiles/logger_app.dir/src/logger.cpp.s
 
 CMakeFiles/logger_app.dir/app/main.cpp.o: CMakeFiles/logger_app.dir/flags.make
 CMakeFiles/logger_app.dir/app/main.cpp.o: ../app/main.cpp
 CMakeFiles/logger_app.dir/app/main.cpp.o: CMakeFiles/logger_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yurika/c_work_area/game_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/logger_app.dir/app/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/logger_app.dir/app/main.cpp.o -MF CMakeFiles/logger_app.dir/app/main.cpp.o.d -o CMakeFiles/logger_app.dir/app/main.cpp.o -c /home/yurika/c_work_area/game_server/app/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yurika/c_area/game_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/logger_app.dir/app/main.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/logger_app.dir/app/main.cpp.o -MF CMakeFiles/logger_app.dir/app/main.cpp.o.d -o CMakeFiles/logger_app.dir/app/main.cpp.o -c /home/yurika/c_area/game_server/app/main.cpp
 
 CMakeFiles/logger_app.dir/app/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logger_app.dir/app/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yurika/c_work_area/game_server/app/main.cpp > CMakeFiles/logger_app.dir/app/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yurika/c_area/game_server/app/main.cpp > CMakeFiles/logger_app.dir/app/main.cpp.i
 
 CMakeFiles/logger_app.dir/app/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logger_app.dir/app/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yurika/c_work_area/game_server/app/main.cpp -o CMakeFiles/logger_app.dir/app/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yurika/c_area/game_server/app/main.cpp -o CMakeFiles/logger_app.dir/app/main.cpp.s
 
 # Object files for target logger_app
 logger_app_OBJECTS = \
@@ -109,7 +109,7 @@ logger_app: CMakeFiles/logger_app.dir/src/logger.cpp.o
 logger_app: CMakeFiles/logger_app.dir/app/main.cpp.o
 logger_app: CMakeFiles/logger_app.dir/build.make
 logger_app: CMakeFiles/logger_app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yurika/c_work_area/game_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable logger_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yurika/c_area/game_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable logger_app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/logger_app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +121,6 @@ CMakeFiles/logger_app.dir/clean:
 .PHONY : CMakeFiles/logger_app.dir/clean
 
 CMakeFiles/logger_app.dir/depend:
-	cd /home/yurika/c_work_area/game_server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yurika/c_work_area/game_server /home/yurika/c_work_area/game_server /home/yurika/c_work_area/game_server/build /home/yurika/c_work_area/game_server/build /home/yurika/c_work_area/game_server/build/CMakeFiles/logger_app.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yurika/c_area/game_server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yurika/c_area/game_server /home/yurika/c_area/game_server /home/yurika/c_area/game_server/build /home/yurika/c_area/game_server/build /home/yurika/c_area/game_server/build/CMakeFiles/logger_app.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/logger_app.dir/depend
 

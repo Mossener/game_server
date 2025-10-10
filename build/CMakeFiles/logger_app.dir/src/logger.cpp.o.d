@@ -1,7 +1,7 @@
 CMakeFiles/logger_app.dir/src/logger.cpp.o: \
- /home/yurika/c_work_area/game_server/src/logger.cpp \
+ /home/yurika/c_area/game_server/src/logger.cpp \
  /usr/include/stdc-predef.h \
- /home/yurika/c_work_area/game_server/include/logger.h \
+ /home/yurika/c_area/game_server/include/logger.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -172,7 +172,7 @@ CMakeFiles/logger_app.dir/src/logger.cpp.o: \
  /usr/include/c++/11/bits/refwrap.h /usr/include/c++/11/bits/unique_ptr.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/ext/concurrence.h \
- /home/yurika/c_work_area/game_server/include/rall.h \
+ /home/yurika/c_area/game_server/include/rall.h \
  /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \

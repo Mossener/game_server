@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/yurika/c_work_area/game_server/build"
+			"value" : "/home/yurika/c_area/game_server/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -475,7 +475,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/yurika/c_work_area/game_server"
+			"value" : "/home/yurika/c_area/game_server"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1011,7 +1011,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/yurika/c_work_area/game_server/build"
+			"value" : "/home/yurika/c_area/game_server/build"
 		},
 		{
 			"name" : "ExampleProject_IS_TOP_LEVEL",
@@ -1035,7 +1035,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/yurika/c_work_area/game_server"
+			"value" : "/home/yurika/c_area/game_server"
 		}
 	],
 	"kind" : "cache",

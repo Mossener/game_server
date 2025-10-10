@@ -1,0 +1,5 @@
+[INFO] Server started, listening on port 8080
+[INFO] Accepted new connection
+[INFO] Received: Hello, Server!
+[INFO] Closed connection
+[ERROR] Server error: Bind failed

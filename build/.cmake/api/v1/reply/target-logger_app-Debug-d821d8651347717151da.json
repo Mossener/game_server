@@ -12,7 +12,7 @@
 		[
 			"add_executable",
 			"add_definitions",
-			"include_directories"
+			"target_include_directories"
 		],
 		"files" : 
 		[
@@ -26,7 +26,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 10,
+				"line" : 9,
 				"parent" : 0
 			},
 			{
@@ -38,7 +38,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 8,
+				"line" : 13,
 				"parent" : 0
 			}
 		]
@@ -59,14 +59,14 @@
 			[
 				{
 					"backtrace" : 2,
-					"define" : "LOGGER_PATH=\"/home/yurika/c_work_area/game_server/build/logger\""
+					"define" : "LOGGER_PATH=\"/home/yurika/c_area/game_server/build/logger\""
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/home/yurika/c_work_area/game_server/include"
+					"path" : "/home/yurika/c_area/game_server/include"
 				}
 			],
 			"language" : "CXX",
