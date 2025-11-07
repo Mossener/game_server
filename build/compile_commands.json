@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/yurika/c_area/game_server/build",
+  "command": "/usr/bin/g++ -DFMT_SHARED -DLOGGER_PATH=\\\"/home/yurika/c_area/game_server/build/logger\\\" -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/home/yurika/c_area/game_server/include -g -std=gnu++17 -o CMakeFiles/HttpServer.dir/src/logger.cpp.o -c /home/yurika/c_area/game_server/src/logger.cpp",
+  "file": "/home/yurika/c_area/game_server/src/logger.cpp",
+  "output": "CMakeFiles/HttpServer.dir/src/logger.cpp.o"
+},
+{
+  "directory": "/home/yurika/c_area/game_server/build",
+  "command": "/usr/bin/g++ -DFMT_SHARED -DLOGGER_PATH=\\\"/home/yurika/c_area/game_server/build/logger\\\" -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/home/yurika/c_area/game_server/include -g -std=gnu++17 -o CMakeFiles/HttpServer.dir/src/server.cpp.o -c /home/yurika/c_area/game_server/src/server.cpp",
+  "file": "/home/yurika/c_area/game_server/src/server.cpp",
+  "output": "CMakeFiles/HttpServer.dir/src/server.cpp.o"
+},
+{
+  "directory": "/home/yurika/c_area/game_server/build",
+  "command": "/usr/bin/g++ -DFMT_SHARED -DLOGGER_PATH=\\\"/home/yurika/c_area/game_server/build/logger\\\" -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/home/yurika/c_area/game_server/include -g -std=gnu++17 -o CMakeFiles/HttpServer.dir/app/main.cpp.o -c /home/yurika/c_area/game_server/app/main.cpp",
+  "file": "/home/yurika/c_area/game_server/app/main.cpp",
+  "output": "CMakeFiles/HttpServer.dir/app/main.cpp.o"
+}
+]
