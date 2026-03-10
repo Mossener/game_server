@@ -7,6 +7,8 @@
 #include "my_net/http.h"
 #include <unordered_set>
 #include <memory>
+#include <atomic>
+
 class Server{
 private:
     Epool pool; 
@@ -15,10 +17,20 @@ private:
     int epoll_fd;
     std::unordered_set<int> clientFds;
     HttpHandle httph;
+
+    // running flag for graceful shutdown
+    std::atomic<bool> running_{true};
+
 public:
     Server(int port, const std::string &logFilePath, size_t threadPoolSize);
     ~Server();
+
+    // start the server loop
     void start();
+
+    // request graceful stop from another thread / signal handler
+    void stop();
+
     void handleClient(int clientFD);
     void printfd();
 };

@@ -8,8 +8,10 @@
 #include <spdlog/async.h>
 #include <spdlog/sinks/basic_file_sink.h>
 #include <iostream>
+
 Server::Server(int port, const std::string &logFilePath, size_t threadPoolSize)
     : pool(threadPoolSize), serverSocket(port) {
+
     spdlog::init_thread_pool(8192, 1);
     logger = spdlog::basic_logger_mt<spdlog::async_factory>("async_logger", logFilePath);
     logger->flush_on(spdlog::level::info);
@@ -17,30 +19,47 @@ Server::Server(int port, const std::string &logFilePath, size_t threadPoolSize)
     serverSocket.bindSocket();
     serverSocket.listenSocket();
     epoll_fd = epoll_create1(0);
+
     if (epoll_fd == -1) {
         throw std::runtime_error("Failed to create epoll file descriptor");
     }
-    struct epoll_event event;
+    
+    struct epoll_event event;     
     event.events = EPOLLIN;
     event.data.fd = serverSocket.getSocketFD();
     logger->info("Server started on port {}", port);   
     if (epoll_ctl(epoll_fd, EPOLL_CTL_ADD, serverSocket.getSocketFD(), &event) == -1) {
         throw std::runtime_error("Failed to add file descriptor to epoll");
     }
-} 
+}  
+
 Server::~Server() {
+    // Request stop to ensure start() exits if still running
+    stop();
     spdlog::drop_all();
     spdlog::shutdown();
-    close(epoll_fd);
+    if (epoll_fd >= 0) close(epoll_fd);
 }
+
+void Server::stop() {
+    running_.store(false);
+    // closing epoll_fd will cause epoll_wait to return -1 and allow loop to exit
+    if (epoll_fd >= 0) {
+        close(epoll_fd);
+        epoll_fd = -1;
+    }
+}
+
 void Server::start() {
     const int MAX_EVENTS = Config::MAX_EVENTS;
     struct epoll_event events[MAX_EVENTS];
     spdlog::info("Server started");
-    while (true) {
+    while (running_.load()) {
         int event_count = epoll_wait(epoll_fd, events, MAX_EVENTS, -1);
         if (event_count == -1) {
             if(errno == EINTR) continue;
+            // if we closed epoll_fd due to stop(), break rather than throw
+            if (!running_.load()) break;
             throw std::runtime_error("epoll_wait failed");
         }
         for(int i = 0; i < event_count; i++){
@@ -53,14 +72,15 @@ void Server::start() {
                 event.data.fd = client_fd;
                 if (epoll_ctl(epoll_fd, EPOLL_CTL_ADD, client_fd, &event) == -1) {
                     close(client_fd);
-                    throw std::runtime_error("Failed to add file descriptor to epoll");
+                    spdlog::error("Failed to add file descriptor to epoll for fd {}", client_fd);
+                    continue;
                 }
                 clientFds.insert(client_fd);
                 printfd();
             }
             else{
+                // dispatch HTTP handling to thread pool
                 pool.enqueue(&HttpHandle::HttpHandle_f,&httph, fd);
-
             }
         }
     }
@@ -90,8 +110,8 @@ void Server::handleClient(int client_fd) {
     }
 }
 void Server::printfd(){
-    system("clear");
-    std::cout<<"Current connected client fds:"<<std::endl;
+    // avoid calling system("clear") in server context
+    std::cout << "---- Current connected client fds ----" << std::endl;
     for(const auto &fd:clientFds){
         std::cout<<fd<<std::endl;
     }

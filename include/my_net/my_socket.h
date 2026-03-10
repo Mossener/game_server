@@ -11,6 +11,14 @@
 #include <spdlog/spdlog.h>
 #include <spdlog/async.h>
 #include <spdlog/sinks/basic_file_sink.h>
+
+// helper to set non-blocking
+static inline void setNonBlockingFD(int fd) {
+    int flags = fcntl(fd, F_GETFL, 0);
+    if (flags == -1) flags = 0;
+    fcntl(fd, F_SETFL, flags | O_NONBLOCK);
+}
+
 class MySocket {
 private:
     int sockfd;
@@ -23,6 +31,9 @@ public:
         if (sockfd < 0) {
             throw std::runtime_error("Socket creation failed");
         }
+        // set listen socket non-blocking to play nicely with epoll
+        setNonBlockingFD(sockfd);
+
         memset(&addr, 0, sizeof(addr));
         addr.sin_family = AF_INET;
         addr.sin_addr.s_addr = INADDR_ANY;
@@ -49,6 +60,9 @@ public:
         if (clientfd < 0) {
             throw std::runtime_error("Accept failed");
         }
+        // ensure client socket is non-blocking as well
+        setNonBlockingFD(clientfd);
+
         return clientfd;
     }
     int getSocketFD() const {

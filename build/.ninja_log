@@ -1,0 +1,9 @@
+# ninja log v5
+0	361	1763360467183732632	CMakeFiles/HttpServer.dir/src/logger.cpp.o	efebd3e57697dd31
+1	659	1763360467481738587	CMakeFiles/HttpServer.dir/app/main.cpp.o	9593f0bc46577cd8
+1	1971	1763360468790764738	CMakeFiles/HttpServer.dir/src/server.cpp.o	6f935027a7253ece
+1971	2044	1763360468865766236	HttpServer	58d455050b7f2a17
+1	516	1773144786460915403	CMakeFiles/HttpServer.dir/src/logger.cpp.o	efebd3e57697dd31
+1	782	1773144786726921020	CMakeFiles/HttpServer.dir/app/main.cpp.o	9593f0bc46577cd8
+1	2134	1773144788075949497	CMakeFiles/HttpServer.dir/src/server.cpp.o	6f935027a7253ece
+2134	2223	1773144788166951417	HttpServer	58d455050b7f2a17
